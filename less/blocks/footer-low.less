@@ -8,6 +8,7 @@
 
 .footer-low__address {
   width: 230px;
+  padding-right: 33px;
 }
 
 .footer-low__email {
@@ -37,7 +38,55 @@
   text-align: left;
 }
 
+.footer-low__social {
+  position: relative;
+}
+
 .footer-low__social-link {
+  position: relative;
   margin-bottom: 40px;
   display: inline-block;
+  font-size: 0;
+
+}
+
+.footer-low__facebook-link {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../../img/facebook.svg");
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.footer-low__instagram-link {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 40px;
+    background-image: url("../../img/instagram.svg");
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+  }
+
+}
+
+.footer-low__youtube-link {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 80px;
+    background-image: url("../../img/youtube.svg");
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+  }
+
 }
