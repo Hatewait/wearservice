@@ -4,8 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Веарсервис</title>
-  <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="js/jquery-1.7.2.min.js">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="http://malsup.github.com/jquery.cycle2.js"></script>
+
 </head>
 <body>
 <div id="wrapper">
@@ -25,7 +29,8 @@
             <li class="main-menu__items"><a href="gallery-nav/index.html" class="main-menu__link">Сделали</a></li>
             <li class="main-menu__items"><a href="articles-nav/index.html" class="main-menu__link">Статьи</a></li>
             <li class="main-menu__items"><a href="about-nav/index.html" class="main-menu__link">О компании</a></li>
-            <li class="main-menu__items"><a href="contacts-nav/office-and-warehouse/index.html" class="main-menu__link">Контакты</a></li>
+            <li class="main-menu__items"><a href="contacts-nav/office-and-warehouse/index.html" class="main-menu__link">Контакты</a>
+            </li>
           </ul>
         </nav>
 
@@ -49,7 +54,12 @@
           <div class="promo__video">
             <a href="" class="promo__video-link">Посмотреть видео о компании</a>
           </div>
-          <a href="products-nav/details/index.html" class="btn  promo__btn">Продукция</a>
+          <a href="products-nav/details/index.html" class="btn  promo__btn animated">Продукция</a>
+        </div>
+
+        <div id="slider" class="cycle-slideshow">
+          <img src="img/scoop-black.png">
+          <img src="img/scoop-red.png">
         </div>
       </section>
 
@@ -85,7 +95,7 @@
 
         </div>
 
-        <a href="about-nav/index.html" class="about__btn  btn">О компании</a>
+        <a href="about-nav/index.html" class="about__btn  btn animated">О компании</a>
       </section>
 
       <section class="features">
@@ -147,8 +157,8 @@
         <h3 class="callback-form__heading">Мы свяжемся с вами</h3>
 
         <form action="">
-          <input type="tel" name="phone" placeholder="" class="callback-form__input">
-          <a href="" class="callback-form__btn  btn">Заказать звонок</a>
+          <input type="tel" name="phone" placeholder="Введите ваш номер" class="callback-form__input">
+          <a href="" class="callback-form__btn  btn animated">Заказать звонок</a>
         </form>
       </section>
 
@@ -248,7 +258,7 @@
                 </ul>
               </div>
               <div class="footer-top__cat-menu">
-                <h2 class="footer-top__cat-menu-title">Изделия</h2>
+                <h2 class="footer-top__cat-menu-title  footer-top__cat-menu-title--margin-top">Изделия</h2>
                 <ul class="footer-top__cat-menu-list">
                   <li class="footer-top__cat-menu-items">
                     <a href="" class="footer-top__cat-menu-link">Ножи</a>
@@ -342,7 +352,7 @@
 
 </div>
 
-
+<script src="js/main-js.js"></script>
 </body>
 </html>
 

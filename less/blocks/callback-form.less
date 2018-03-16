@@ -20,6 +20,12 @@
   width: 420px;
   border: 2px solid rgba(29, 29, 27, 0.2);
   border-radius: 6px;
+  background-color: @body-color;
+
+  &:hover, &:focus {
+    outline: none;
+    border: 2px solid @red;
+  }
 }
 
 .callback-form__btn {
@@ -28,4 +34,11 @@
   border-bottom-right-radius: 6px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+}
+
+.callback-form__input[placeholder] {
+  font-size: 16px;
+  line-height: 16px;
+  color: rgba(29, 29, 27, 0.7);
+  padding-left: 120px;
 }

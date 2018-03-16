@@ -9,7 +9,7 @@ body {
   font-size: 16px;
   line-height: 16px;
   color: @text-color;
-  background-color: #F8F9FB;
+  background-color: @body-color;
 }
 
 .about-company-bg {
@@ -57,13 +57,14 @@ ul {
   border-radius: 6px;
 }
 
-.sub-btn {
-
+.btn.animated:hover {
+  width: 185px;
+  transition:all 1s linear;
+ // transition: width 0.3s ease;
 }
 
-
 .link {
-  display: block;
+ // display: block;
 
   color: @red;
   font-size: 16px;

@@ -1,7 +1,9 @@
 .promo {
+  display: flex;
+  justify-content: space-between;
   min-height: 600px;
   padding-top: 60px;
-  background: url("../../img/scoop-black.png") no-repeat 620px 40px;
+ // background: url("../../img/scoop-black.png") no-repeat 620px 40px;
 }
 
 .promo__heading {
@@ -52,8 +54,8 @@
   &::after {
     position: absolute;
     content: "";
-    left: 20px;
-    top: 0px;
+    left: 21px;
+    top: 2px;
     width: 0;
     height: 0;
     border-style: solid;
@@ -62,3 +64,11 @@
   }
 }
 
+#slider {
+  position:relative;
+}
+
+#slider img {
+ // width:50%;
+  display:block;
+}

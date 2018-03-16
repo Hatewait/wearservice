@@ -11,14 +11,14 @@
 <header class="main-header">
   <div class="header__wrapper-inner">
     <div class="logo">
-      <a href="#" class="logo__link">
-        <img src="" alt="" class="logo__img">
+      <a href="../../../index.html" class="logo__link">
+        <img src="../../../img/logo.svg" width="203" height="58" alt="" class="logo__img">
       </a>
     </div>
 
     <nav class="nav">
       <ul class="main-menu">
-        <li class="main-menu__items  main-menu__items--active">Продукция</li>
+        <li class="main-menu__items  main-menu__items--active"><a class="main-menu__link">Продукция</a></li>
         <li class="main-menu__items"><a href="../../../gallery-nav/index.html" class="main-menu__link">Сделали</a></li>
         <li class="main-menu__items"><a href="../../../articles-nav/index.html" class="main-menu__link">Статьи</a></li>
         <li class="main-menu__items"><a href="../../../about-nav/index.html" class="main-menu__link">О компании</a></li>
@@ -27,7 +27,7 @@
     </nav>
 
     <div class="phone">
-      <p class="phone__text"><span class="phone__code">+7 495</span>727-08-09</p>
+      <p class="phone__text"><span class="phone__code">+7 495 </span>727-08-09</p>
     </div>
 
   </div>
@@ -38,15 +38,16 @@
     <section class="sub-nav">
       <ul class="sub-nav__list">
         <li class="sub-nav__item  sub-nav__item--active"><a class="sub-nav__link">Детали</a></li>
-        <li class="sub-nav__item"><a href="" class="sub-nav__link">Материалы</a></li>
-        <li class="sub-nav__item"><a href="" class="sub-nav__link">Услуги</a></li>
+        <li class="sub-nav__item"><a href="../../materials/index.html" class="sub-nav__link">Материалы</a></li>
+        <li class="sub-nav__item"><a href="../../services/index.html" class="sub-nav__link">Услуги</a></li>
       </ul>
 
       <div class="sub-nav__form">
-        <form action="" method="get">
-          <input type="search" class="sub-nav__input" placeholder="Например: футеровка">
-        </form>
-      </div>
+      <form action="" method="get">
+        <input type="search" class="sub-nav__input" placeholder="Например: футеровка">
+        <a href="" class="sub-nav__link-icon"></a>
+      </form>
+    </div>
     </section>
 
     <section class="main-content">
@@ -60,20 +61,23 @@
       </div>
 
       <div class="detail-inner">
-        <p class="detail-inner__text">
-          Навесное оборудование постоянно подвергается сильному износу из-за абразивных частиц, которые содержатся
-          в земной породе.
-          Мы делаем футеровку и бронирование оборудования, используем стойкие к вмятинам и абразивному стиранию
-          материалы — это предотвратит износ и увеличит срок службы
-        </p>
-        <p class="detail-inner__text">
-          Мы делаем футеровку и бронирование оборудования, используем стойкие к вмятинам и абразивному стиранию
-          материалы — это предотвратит износ и увеличит срок службы
-        </p>
+        <div class="detail-inner__top-description">
+          <h2 class="detail-inner__heading">Дорожно-строительная техника</h2>
+          <p class="detail-inner__text">
+            Навесное оборудование постоянно подвергается сильному износу из-за абразивных частиц, которые содержатся
+            в земной породе.
+            Мы делаем футеровку и бронирование оборудования, используем стойкие к вмятинам и абразивному стиранию
+            материалы — это предотвратит износ и увеличит срок службы
+          </p>
+          <p class="detail-inner__text">
+            Мы делаем футеровку и бронирование оборудования, используем стойкие к вмятинам и абразивному стиранию
+            материалы — это предотвратит износ и увеличит срок службы
+          </p>
+        </div>
 
         <div class="detail-inner__wrapper">
           <ul class="detail-inner__list">
-            <li class="detail-inner__item  detail-inner__item--active">Нож ковша</li>
+            <li class="detail-inner__item  detail-inner__item--active"><a class="detail-inner__link">Нож ковша</a></li>
             <li class="detail-inner__item"><a href="" class="detail-inner__link">Нож на погрузчик</a></li>
             <li class="detail-inner__item"><a href="" class="detail-inner__link">Ножи грейдера</a></li>
             <li class="detail-inner__item"><a href="" class="detail-inner__link">Ножи для гидроножниц</a></li>
@@ -82,26 +86,28 @@
             <li class="detail-inner__item"><a href="" class="detail-inner__link">Футеровка ковша</a></li>
           </ul>
 
-          <div class="detail-inner__description">
-            <div class="detail-inner__top">
-              <img src="" alt="Нож ковша" class="detail-inner__img">
-              <div class="detail-inner__form-wrapper">
-                <p class="detail-inner__title">Нужна такая деталь?</p>
-                <p class="detail-inner__text">
+          <div class="detail-inner__product-description">
+            <div class="detail-inner__product-top">
+              <img src="../../../img/bucket-lip.jpg" alt="Нож ковша" class="detail-inner__img">
+              <div class="detail-inner__product-form-wrapper">
+                <p class="detail-inner__product-heading">Нужна такая деталь?</p>
+                <p class="detail-inner__product-text">
                   Проконсультируем, поможем выбрать материал изделия и оформить заказ
                 </p>
                 <form action="" method="post">
                   <input type="tel" class="detail-inner__input" placeholder="Номер телефона">
-                  <input type="checkbox" class="detail-inner__checkbox" name="checkbox" id="accept">
-                  <label class="detail-inner__label" for="accept">Согласен на обработку <span
-                          class="detail-inner__span">персональных данных</span></label>
+                  <div><input type="checkbox" class="detail-inner__checkbox" name="checkbox" id="accept">
+                    <label class="detail-inner__label" for="accept">Согласен на обработку <span
+                            class="detail-inner__span">персональных данных</span></label>
+                  </div>
+
                   <button class="detail-inner__btn  btn" type="submit">Заказать</button>
                 </form>
               </div>
             </div>
 
             <div class="detail-inner__bottom">
-              <p class="detail-inner__text">
+              <p class="detail-inner__text-bottom">
                 Наиболее часто применяемый вид навесного оборудования экскаватора — общеземельный ковш, который
                 используется для грунтов I-IV категории. Какие только работы не производят с помощью этих незаметных
                 «трудяг» — роют котлованы и траншеи, используют для погрузочных работ, разрабатывают карьеры.
@@ -116,41 +122,50 @@
 
       <section class="details-container">
         <article class="detail-card">
-          <img class="detail-card__img" src="" alt="Бетоносмесители">
-          <h2 class="detail-card__heading">Бетоносмесители</h2>
-          <p class="detail-card__text">
-            Износостойкая броня, заслонки, рычаги, скребки и лопасти
-          </p>
+          <a href="" class="detail-card__link">
+            <img class="detail-card__img" src="../../../img/concrete-mixer.png" width="360" height="260"
+                 alt="Бетоносмесители">
+            <h2 class="detail-card__heading">Бетоносмесители</h2>
+            <p class="detail-card__text">
+              Износостойкая броня, заслонки, рычаги, скребки и лопасти
+            </p>
 
+          </a>
         </article>
 
         <article class="detail-card">
-          <img class="detail-card__img" src="" alt="Вторичная переработка">
-          <h2 class="detail-card__heading">Вторичная переработка</h2>
-          <p class="detail-card__text">
-            Ножи для измельчения, футеровка,
-            детали многочелюстных захватов
-          </p>
-
+          <a href="" class="detail-card__link">
+            <img class="detail-card__img" src="../../../img/recycling.png" width="360" height="259"
+                 alt="Вторичная переработка">
+            <h2 class="detail-card__heading">Вторичная переработка</h2>
+            <p class="detail-card__text">
+              Ножи для измельчения, футеровка,
+              детали многочелюстных захватов
+            </p>
+          </a>
         </article>
 
         <article class="detail-card">
-          <img class="detail-card__img" src="" alt="Дробильно-сортировочная">
-          <h2 class="detail-card__heading">Дробильно-сортировочная</h2>
-          <p class="detail-card__text">
-            Детали для разного типа дробилок, грохота, питателей, мельниц
-          </p>
-
+          <a href="" class="detail-card__link">
+            <img class="detail-card__img" src="../../../img/screening-and-crushing.png" width="360" height="260"
+                 alt="Дробильно-сортировочная">
+            <h2 class="detail-card__heading">Дробильно-сортировочная</h2>
+            <p class="detail-card__text">
+              Детали для разного типа дробилок, грохота, питателей, мельниц
+            </p>
+          </a>
         </article>
 
         <article class="detail-card">
-          <img class="detail-card__img" src="" alt="Прочие изделия">
-          <h2 class="detail-card__heading">Прочие изделия</h2>
-          <p class="detail-card__text">
-            Стрелковые объекты, футеровка,
-            детали многочелюстных захватов
-          </p>
-
+          <a href="" class="detail-card__link">
+            <img class="detail-card__img" src="../../../img/other-details.png" width="360" height="260"
+                 alt="Прочие изделия">
+            <h2 class="detail-card__heading">Прочие изделия</h2>
+            <p class="detail-card__text">
+              Стрелковые объекты, футеровка,
+              детали многочелюстных захватов
+            </p>
+          </a>
         </article>
       </section>
     </section>
@@ -253,7 +268,7 @@
               </ul>
             </div>
             <div class="footer-top__cat-menu">
-              <h2 class="footer-top__cat-menu-title">Изделия</h2>
+              <h2 class="footer-top__cat-menu-title  footer-top__cat-menu-title--margin-top">Изделия</h2>
               <ul class="footer-top__cat-menu-list">
                 <li class="footer-top__cat-menu-items">
                   <a href="" class="footer-top__cat-menu-link">Ножи</a>

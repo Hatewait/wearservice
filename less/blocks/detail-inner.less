@@ -1,0 +1,142 @@
+.detail-inner {
+  background: url("../../img/scoop-inner-details.jpg") no-repeat;
+  padding-top: 220px;
+  padding-bottom: 80px;
+  margin-bottom: 25px;
+  background-color: @white;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.0965523);
+}
+
+.detail-inner__top-description {
+  margin-top: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.detail-inner__product-description {
+  width: 619px;
+}
+
+.detail-inner__heading {
+  margin: 0;
+  font-weight: 300;
+  line-height: 58px;
+  font-size: 36px;
+  letter-spacing: -0.0384615em;
+}
+
+.detail-inner__text {
+  line-height: 22px;
+  font-size: 18px;
+}
+
+.detail-inner__wrapper {
+  display: flex;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.detail-inner__list {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  margin-right: 41px;
+}
+
+.detail-inner__item {
+  border-bottom: 1px solid rgba(29, 29, 27, 0.1);
+
+  &:last-child, &:first-child {
+    border-bottom: none;
+  }
+
+  &--active {
+    a {
+      background-color: @red;
+      color: @white;
+
+      &:hover, &:focus {
+        outline: none;
+        background-color: @red;
+        color: @white;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.detail-inner__link {
+  display: block;
+  padding: 25px 0 25px 30px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+  text-decoration: none;
+  color: rgba(29, 29, 27, 0.8);
+
+  &:hover, &:focus {
+    background-color: @red;
+    color: @white;
+    opacity: .5;
+    outline: none;
+  }
+}
+
+
+
+.detail-inner__product-top {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.detail-inner__product-form-wrapper form {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-inner__img {
+  margin-right: 20px;
+}
+
+.detail-inner__product-heading {
+  margin-top: 0;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+}
+
+.detail-inner__product-text {
+  font-weight: normal;
+  line-height: 19px;
+  font-size: 16px;
+}
+
+.detail-inner__label {
+  line-height: normal;
+  font-size: 12px;
+  color: #333333;
+}
+
+.detail-inner__btn {
+  border: none;
+  width: 180px;
+  height: 46px;
+  padding-top: 0;
+  margin-top: 16px;
+}
+
+.detail-inner__input {
+  width: 289px;
+  height: 49px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 10px;
+  border: none;
+  background-color: #E9E9E9;
+}
+
+.detail-inner__text-bottom {
+  font-size: 16px;
+  line-height: 20px;
+}
